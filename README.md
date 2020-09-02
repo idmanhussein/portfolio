@@ -1,6 +1,2 @@
-# black-codher
-# black-codher
-# black-codher
-# new-repo
-# porfolio
-# portfolio
+My Portfolio
+Made during the Black Codher Bootcamp
