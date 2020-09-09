@@ -1,4 +1,4 @@
-/* Write some CSS below */
+
 body {
     background-color: white;
     font-family: 'Inter', sans-serif;
@@ -94,8 +94,7 @@ body {
  }
 
 .skills {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0; 
    display: flex;
    justify-content: center;
    padding: 0;
