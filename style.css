@@ -1,148 +1,157 @@
-
-body {
-    background-color: white;
-    font-family: 'Inter', sans-serif;
-    margin: 0;
+@media (max-width: 1024px) and (min-width: 768px) {
 }
 
-.container {
-    width: 800px;
-    margin: auto;
+body {
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.navbar {
+  list-style: none;
+}
+
+.navbar,
+li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li,
+a:hover {
+  color: #900c3f;
+}
+
+.navbar li,
+a:visited {
+  color: #7d0633;
+}
+.banner-container {
+  width: 100%;
 }
 
 #banner {
-    padding: 150px 0; 
-    padding-bottom: 50px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
- 
+
 #banner h1 {
-    margin: 0;
-    color: #221f3b;
-    font-weight: 800;
-    font-size: 50px;
-}
- 
- #banner p {
-     color: #050505;
-     font-weight: 400;
-     font-size: 20px;
+  color: #221f3b;
+  font-weight: 800;
+  font-size: 50px;
 }
 
- #banner a {
-     text-decoration: none;
-
+#banner p {
+  color: #050505;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+#banner a {
+  text-decoration: none;
 }
 
- .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    grid-gap: 16px;
-    padding-bottom: 50px;
+hr {
+  border: none;
+  height: 20px;
+  width: 90%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #7510f7;
+  box-shadow: 0 20px 20px -20px #7510f7;
+  margin: -50px auto 10px;
 }
 
-.card-white {
-    background: white;
-    box-shadow: 0 0 16px rgba(0,0,0,0.1);
-    border-radius: 4px;
-    width: 200px;
-    text-align: center;
-    padding: 24px;
-    margin: 8px;
- }
-
-.card-white h2 {
-     color: #221f3b;
- }
-
-
-.card-white img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-
- }
-
-
- .description {
-     background-color: #dddddd;
-     color: white;
-     padding: 80px 24px;
- }
-
-.description .intro {
-    width: 800px;
-    margin: auto;
+.skills-container {
+  width: 100%;
+  height: calc(100vh - 80px);
 }
-.description h1 {
-    color: #221f3b;
-     font-size: 32px;
-     font-weight: 800;
-     text-align: center;
-
- }
-
- .description h2 {
-     color: #050505;;
-     font-weight: 300;
-     font-size: 20px;
-     line-height: 1.5;
-     text-align: center;
-     word-break: break-word;
- }
-
-.skills {
-    margin: 0; 
-   display: flex;
-   justify-content: center;
-   padding: 0;
-   vertical-align: baseline;
-   font-size: 100%;
-   box-shadow: 0 0 16px rgba(0,0,0,0.1);
-   background-color:white;
+#skills {
+  overflow: scroll;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 80vh;
+  max-height: 100vh;
+  width: 100%;
+}
+.skills-header {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: center;
+  text-align: center;
 }
 
-.skills .column {
-    background: white;
-    box-shadow: 0 0 16px rgba(0,0,0,0.1);
-    border-radius: 1px;
-    width:200px;
-    text-align: center;
-    padding: 30px;
-    
-
-}
-.skills .column, h1 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
+.skills-header,
+h1 {
+  color: #221f3b;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
 }
 
-.skills h2 {
-    color: #7510f7;
-    font-weight: 100;
-    font-size: 16px;
-   
+.skills-header,
+h3 {
+  color: #7510f7;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.skills p {
-    color: #050505;
-    font-size: 14px;
+.skills-card {
+  grid-row-start: 2;
+  height: 100%;
+  width: auto;
+  justify-self: center;
+}
 
+.skills-img {
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.skills-individual-images {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.skills-img img {
+  height: auto;
+  width: 40%;
+  margin-right: 7%;
+  object-fit: cover;
+  filter: drop-shadow(7px 7px 7px #222);
+  -webkit-filter: drop-shadow(7px 7px 7px #222);
 }
 
 #footer {
-    margin: 0;
-    background: #2d2b4e;
-    text-align: center;
-    padding: 5px
-  
-  }
-  
-  #footer p {
-    color: white;
-    font-size: 16px;
-  }
-  
+  margin: 0;
+  background: #2d2b4e;
+  text-align: center;
+  padding: 5px;
+}
+
+#footer p {
+  color: white;
+  font-size: 16px;
+}
