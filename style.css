@@ -67,22 +67,6 @@ a {
   margin: 0;
 }
 
-#banner h1 {
-  color: #221f3b;
-  font-weight: 800;
-  font-size: 50px;
-}
-
-#banner p {
-  color: #050505;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-}
-#banner a {
-  text-decoration: none;
-}
-
 .aboutme-container {
   display: flex;
   flex-wrap: wrap;
