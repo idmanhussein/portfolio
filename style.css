@@ -15,37 +15,56 @@ header {
 }
 
 .navbar {
-  list-style: none;
+  margin: auto;
+  padding: 5px 0;
+  font-size: 17px;
+  width: 500px;
 }
 
-.navbar,
-li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-.navbar a {
-  text-decoration: none;
-}
-
-.navbar li,
-a:hover {
-  color: #900c3f;
-}
-
-.navbar li,
-a:visited {
-  color: #7d0633;
-}
-.banner-container {
+.navbar .navbarItems {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-#banner {
+.navbar li,
+a {
+  list-style: none;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 10px;
+  color: inherit;
+}
+
+.navbar a:hover {
+  background: rgb(75, 0, 130);
+  border-radius: 5%;
+  color: white;
+}
+
+.main-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-content: center;
+  height: calc(100vh - 62px);
+  flex-wrap: wrap;
+}
+
+.main-container-header {
+  color: #221f3b;
+  text-align: center;
+  font-weight: 800;
+  font-size: 50px;
+  width: 100%;
+  margin: 0;
+}
+
+.main-container-paragraph {
+  color: #050505;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
 }
 
 #banner h1 {
@@ -64,15 +83,26 @@ a:visited {
   text-decoration: none;
 }
 
-hr {
-  border: none;
-  height: 20px;
-  width: 90%;
-  height: 50px;
-  margin-top: 0;
-  border-bottom: 1px solid #7510f7;
-  box-shadow: 0 20px 20px -20px #7510f7;
-  margin: -50px auto 10px;
+.aboutme-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100vh;
+  background-color: #afaaae;
+}
+
+.aboutme-header {
+  color: #1b0d13;
+  font-size: 40px;
+  padding-left: 5%;
+}
+
+.aboutme-paragraph {
+  color: #1b0d13;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 2;
+  margin: 0 5%;
 }
 
 .skills-container {
@@ -93,13 +123,10 @@ hr {
 .skills-container .skills-header {
   color: #221f3b;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
 }
 
-.skills-container .skills-header {
-  text-align: center;
-}
 .skills-container #skills,
 .skills-icons {
   display: flex;
