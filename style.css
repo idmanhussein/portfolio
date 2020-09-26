@@ -125,6 +125,7 @@ a {
 }
 
 .contactme-container {
+  /* ah it looked better without this picture no? i think a different one may be nicer... up to you ofc! lol*/
   background-image: url("images/bgcontactme.jpg");
   height: calc(100vh - 60px);
   background-size: cover;
