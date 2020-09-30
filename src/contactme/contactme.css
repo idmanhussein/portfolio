@@ -1,3 +1,47 @@
+@media (max-width: 1024px) and (min-width: 768px) {
+}
+
+body {
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.navbar {
+  margin: auto;
+  padding: 5px 0;
+  font-size: 17px;
+  width: 500px;
+}
+
+.navbar .navbarItems {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li,
+a {
+  list-style: none;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 10px;
+  color: inherit;
+}
+
+.navbar a:hover {
+  background: rgb(75, 0, 130);
+  border-radius: 5%;
+  color: white;
+}
+
 .contactme-container {
   background-image: url("images/bgcontactme.jpg");
   height: calc(100vh - 60px);
