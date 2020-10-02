@@ -56,3 +56,7 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.cards img {
+  max-width: 400px;
+}
