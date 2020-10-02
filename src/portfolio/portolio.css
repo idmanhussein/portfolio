@@ -1,0 +1,53 @@
+body {
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.navbar {
+  margin: auto;
+  padding: 5px 0;
+  font-size: 17px;
+  width: 500px;
+}
+
+.navbar .navbarItems {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li,
+a {
+  list-style: none;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 10px;
+  color: inherit;
+}
+
+.navbar a:hover {
+  background: rgb(75, 0, 130);
+  border-radius: 5%;
+  color: white;
+}
+
+.portfolio {
+  background-image: url("/images/bgportfolio.jpg");
+  height: 100vh;
+  background-size: cover;
+  opacity: 0.8;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 10px 15px;
+  padding: 2rem;
+}
